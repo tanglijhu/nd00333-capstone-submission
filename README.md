@@ -131,7 +131,3 @@ A [screen recording](https://youtu.be/jsxS3OFomd8) of the project is provided to
 ## Suggestions to Improve
 
 * To perform feature engineering, for example, dimension reduction using PCA. PCA enables to represent a multivariate data (i.e., high dimension) as smaller set of variables (i.e., small dimenstion) in order to observe trends, clusters, and outliers. This could uncover the relationships between observations and variables and among the variables.
-
-* To fix data imbalance. The dataset is highly imbalanced and about 2473 / (2473 + 22076) * 100 = 10.1 % of the clients actually subscribed to a term deposit. Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class. Therefore, an data imbalance issue should be considered to fix for future experiments.We may try: 1) random undersampling, 2) oversampling with SMOTE, 3) a combination of under- and oversampling method using pipeline.
-
-
