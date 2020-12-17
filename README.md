@@ -75,12 +75,12 @@ For AutoML settings, several critical parameters have to be configured, includin
 The best model after training was "VotingEnsemble" with the AUC_weighed matric as of 0.9148.
 
 ### RunDetails Widget
-![RunDetails Widget-1](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/RunDetails-Widget-1_new.PNG?raw=true)
-![RunDetails Widget-2](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/RunDetails-Widget-2_new.PNG?raw=true)
+![RunDetails Widget](https://github.com/tanglijhu/nd00333-capstone-submission/blob/main/img/automal_RunDetails%20widget.PNG?raw=true)
 
 ### Best Model
-![best model 1](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/best%20model%20-%201_new.PNG?raw=true)
-![best model 2](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/best%20model%20-%202_new.PNG?raw=true) model
+![best model 1](https://github.com/tanglijhu/nd00333-capstone-submission/blob/main/img/automal_best_model.PNG?raw=true)
+![best model 2](https://github.com/tanglijhu/nd00333-capstone-submission/blob/main/img/automal_best_model_run_id-1.PNG?raw=true)
+![best model 3](https://github.com/tanglijhu/nd00333-capstone-submission/blob/main/img/automal_best_model-details.PNG?raw=true)
 
 
 ## Hyperparameter Tuning
@@ -98,12 +98,10 @@ The best metrics after HyperDriveConfig include 'Regularization Strength:': 0.19
 The corresponding parameters include "C": '0.19046682857549246' and 'max_iter': '200'.
 
 ### RunDetails Widget
-![RunDetails Widget-1](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/RunDetails-Widget-1_new.PNG?raw=true)
-![RunDetails Widget-2](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/RunDetails-Widget-2_new.PNG?raw=true)
+![RunDetails Widget](https://github.com/tanglijhu/nd00333-capstone-submission/blob/main/img/hyperdrive%20RunDetails%20widget.PNG?raw=true)
 
 ### Best Model
-![best model 1](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/best%20model%20-%201_new.PNG?raw=true)
-![best model 2](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/best%20model%20-%202_new.PNG?raw=true) model
+![best model](https://github.com/tanglijhu/nd00333-capstone-submission/blob/main/img/hyperdrive_best_model_run_id.PNG?raw=true)
 
 ## Model Deployment
 
@@ -116,7 +114,7 @@ To deploy a working model as a web servce (i.e., endpoint), the workspace name, 
 After successful deployment, a REST endpoing with a scoring url was generated to be used for predictions as shown below: 
 
 ### Endpoint
-![Endpoint](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/best%20model%20-%201_new.PNG?raw=true)
+![Endpoint](https://github.com/tanglijhu/nd00333-capstone-submission/blob/main/img/model_endpoint.PNG?raw=true)
 
 ### Endpoint Query
 
