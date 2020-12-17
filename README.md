@@ -18,6 +18,7 @@
   * [Best Model](#best-model)
 - [Model Deployment](#model-deployment)
   * [Overview of Deployed Model](#overview-of-deployed-model)
+  * [Endpoint](#endpoint)
   * [Endpoint Query](#endpoint-query)  
 - [Screen Recording](#screen-recording)
 - [Suggestions to Improve](#suggestions-to-improve)
@@ -108,7 +109,18 @@ The corresponding parameters include "C": '0.19046682857549246' and 'max_iter': 
 
 ### Overview of Deployed Model 
 
+The working model was deployed as a web service on Azure Container Instance (ACI). The entry_script used as an input to InferenceConfig was "score.py", which is the best working model generated from AutoML training. Some of the critical deploy configuration parameters include "cpu_cores", "memort_gb", "tags", "auth_enabled", and "primary_key". 
+
+To deploy a working model as a web servce (i.e., endpoint), the workspace name, endpoint name, the registered model, inference_config, and deploy configuration were provided. 
+
+After successful deployment, a REST endpoing with a scoring url was generated to be used for predictions as shown below: 
+
+### Endpoint
+![Endpoint](https://github.com/tanglijhu/nd00333_AZMLND_operationalizing_ML_project/blob/main/img/best%20model%20-%201_new.PNG?raw=true)
+
 ### Endpoint Query
+
+In order to use the endpoint to make predictions, 'endpoint.py' containing two data series with 12 features for each was implemented and the results were generated. The details could be visualized in the following screen recording. 
 
 ## Screen Recording
 
@@ -124,5 +136,4 @@ A [screen recording](https://youtu.be/jsxS3OFomd8) of the project is provided to
 
 * To fix data imbalance. The dataset is highly imbalanced and about 2473 / (2473 + 22076) * 100 = 10.1 % of the clients actually subscribed to a term deposit. Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class. Therefore, an data imbalance issue should be considered to fix for future experiments.We may try: 1) random undersampling, 2) oversampling with SMOTE, 3) a combination of under- and oversampling method using pipeline.
 
-* To try to use other metrics such as 'AUC_weighted' to get better automated ML training . As for a highly unbalanced problem like this, AUC metric is very popular. AUC is acturally preferred over accuracy for binary classification therefore this metric is worth a try.
 
